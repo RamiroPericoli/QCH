@@ -31,6 +31,20 @@ a {
     overflow: hidden;
 }
 
+/* Estilos nvabar */
+.navbar-nav {
+background-color:#9CC5A1 ;
+font-weight: 300;
+}
+.nav-link {
+    color: rgb(41, 41, 29);
+    font-family: "Roboto", Sans-serif;
+    font-size: 22px;
+}
+.navbar-nav .nav-link.active {
+color: yellow;
+}
+
 /* Estilos para la seccion de videos */
 .video {
     display: flex;
