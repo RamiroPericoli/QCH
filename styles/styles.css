@@ -36,10 +36,6 @@ header {
     height: 140px;
 }
 
-/* .logo-header {
-    overflow: hidden;
-} */
-
 .logo__marca {
     width: 300px;
     height: 100px;
@@ -70,7 +66,6 @@ header {
     text-align: center;
     color: #3a633f;
     font-size: 45px;
-    font-family:
 }
 
 /* Estilos footer */
@@ -264,15 +259,29 @@ footer {
 
 /* Media querys paginia inicio */
 @media (max-width: 375px) {
+
+    header{
+        background-color: white;
+        justify-content:center;
+        align-items: normal;
+        height: 100px;
+    }
+    .nav-link{
+        background-color: #9CC5A1;
+
+          }
+    .d-flex {
+        display: none !important;
+    }
     .logo__marca {
         width: 130px;
         height: 50px;
-        margin-left: 10px;
+        margin-left: 50px;
+        margin-top: 20px;
     }
-
-
-
-
+main {
+    background-color: white;
+}
     .grid__recetas {
         display: grid;
         grid-template-columns: 1fr;
@@ -301,5 +310,8 @@ footer {
 
     .redes-sociales {
         justify-content: space-around;
+    }
+    .texto-footer{
+        color: black;
     }
 }
