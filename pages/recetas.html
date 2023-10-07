@@ -11,50 +11,68 @@
 </head>
 
 <body>
-    <header class="logo-header">
+    <header class="logo-header border border-success-subtle">
         <!--Logo de la página-->
-        <a href="../index.html"><img src="../assets/logo-marca.png" alt="Logo-marca"></a>
+        <a class="logo-marca" href="../index.html"><img class="logo__marca" src="../assets/logo-marca.png"
+            alt="Logo-marca"></a>
         <!--Menu navegable-->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/recetas.html">Recetas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/planifica-tu-menu.html">Planifica tu menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Que comemos hoy?" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/recetas.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/planifica-tu-menu.html">Planifica tu menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex   " role="search">
+                <input class="form-control me-2 border border-black " type="search" placeholder="Que comemos hoy?"
+                  aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-    </header>
+          </div>
+        </nav>
+      </header>
 
     <main>
         <!--Titulo pag Recetas-->
         <h1 class="titulo-recetas">Recetas</h1>
         <!--contenido pagina de recetas-->
-
+        <!-- <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/lomo-de-cerdo-al-horno-con-hierbas.jpg" class="d-block imagen__carousel" alt="lomo-de-cerdo-al-horno-con-hierbas">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/Pastel-de-Chocolate-Triple-Capa.jpg" class="d-block imagen__carousel" alt="Pastel-de-Chocolate-Triple-Capa">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/pollo-a-la-parmesana.jpg" class="d-block imagen__carousel" alt="pollo-a-la-parmesana">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
         <section>
-            <article class="lista-recetas">
-                <div class="recetas-varias">
-                    <h2>Pollo a la Parmesana</h2>
-
+            <article class="lista__recetas">
+                <div class="recetas__varias">
                     <img src="../assets/pollo-a-la-parmesana.jpg" alt="pollo-a-la-parmesana">
+                    <!-- <h2>Pollo a la Parmesana</h2>
                     <h2>Ingredientes</h2>
                     <p>Pechugas de pollo
                         Pan rallado
@@ -63,8 +81,8 @@
                         Mozzarella rallada
                         Aceite de oliva
                         Sal y pimienta al gusto</p>
-                    <h2>Instrucciones:</h2>
-                    <p> 1.Precalienta el horno a 200°C.
+                    <h2>Instrucciones:</h2> -->
+                    <p class="recetas__varias__p"> 1.Precalienta el horno a 200°C.
                         2.Sazona las pechugas de pollo con sal y pimienta.
                         3.En un tazón, mezcla el pan rallado con el queso parmesano.
                         4.Pasa cada pechuga de pollo por la mezcla de pan rallado y queso, asegurándote de que queden
@@ -75,8 +93,8 @@
                         mozzarella rallada.
                         7.Hornea durante 20-25 minutos o hasta que el queso esté dorado y burbujeante.
                         8.Sirve caliente.</p>
-                    <label for="agendar-comida">Agendar Comida</label>
-                    <input type="date">
+                    <!-- <label for="agendar-comida">Agendar Comida</label>
+                    <input type="date"> -->
                 </div>
                 <div class="recetas-varias">
                     <h2>Lomo de Cerdo al Horno con Hierbas</h2>
@@ -142,22 +160,95 @@
                         7.Deja enfriar antes de cortar en cuadrados y servir.</p>
                     <label for="agendar-comida">Agendar Comida</label>
                     <input type="date">
+                </div>
+                <div class="recetas-varias">
+                    <h2>Tacos de Carne Asada</h2>
+                    <img src="../assets/Tacos-de-Carne-Asada.jpg" alt="Tacos-de-Carne-Asada">
+                    <h2>Ingredientes</h2>
+                    <p>Carne asada (como falda o arrachera)
+                        Tortillas de maíz
+                        Cebolla
+                        Cilantro
+                        Salsa picante (opcional)</p>
+                    <h2>Instrucciones:</h2>
+                    <p> 1.Asa la carne a la parrilla hasta que esté tierna y ligeramente dorada.
+                        2.Mientras tanto, corta la cebolla en rodajas finas y pica el cilantro.
+                        3.Una vez cocida la carne, córtala en tiras delgadas.
+                        4.Calienta las tortillas de maíz en una sartén.
+                        5.Rellena las tortillas con la carne asada, cebolla, cilantro y salsa picante al gusto.
+                        6.Sirve inmediatamente y disfruta de estos sabrosos tacos.</p>
+                    <label for="agendar-comida">Agendar Comida</label>
+                    <input type="date">
+                </div>
+                <div class="recetas-varias">
+                    <h2>Pastel de Chocolate Triple Capa</h2>
+                    <img src="../assets/Pastel-de-Chocolate-Triple-Capa.jpg" alt="Pastel-de-Chocolate-Triple-Capa">
+                    <h2>Ingredientes</h2>
+                    <p>Ingredientes para el bizcocho de chocolate (según tu receta favorita)
+                        Ganache de chocolate (chocolate y crema)
+                        Glaseado de chocolate</p>
+                    <h2>Instrucciones:</h2>
+                    <p> 1.Hornea tres capas de bizcocho de chocolate según tu receta favorita. Deja que se enfríen por completo.
+                        2.Prepara ganache de chocolate calentando crema y mezclándola con chocolate hasta obtener una mezcla suave.
+                        3.Coloca una capa de bizcocho en un plato y cubre con una capa de ganache. Repite con las otras capas.
+                        4.Cubre el pastel completo con glaseado de chocolate.
+                        5.Refrigera para que el glaseado se endurezca antes de servir.</p>
+                    <label for="agendar-comida">Agendar Comida</label>
+                    <input type="date">
+                </div>
+                <div class="recetas-varias">
+                    <h2>Salmón a la Parrilla con Salsa de Mantequilla de Limón</h2>
+                    <img src="../assets/Salmón-a-la-Parrilla.jpg" alt="Salmón-a-la-Parrilla">
+                    <h2>Ingredientes</h2>
+                    <p>Filetes de salmón
+                        Mantequilla
+                        Jugo de limón
+                        Ajo picado
+                        Perejil picado
+                        Sal y pimienta</p>
+                    <h2>Instrucciones:</h2>
+                    <p> 1.Precalienta la parrilla a fuego medio-alto.
+                        2.En un tazón, mezcla mantequilla derretida, jugo de limón, ajo picado y perejil.
+                        3.Sazona los filetes de salmón con sal y pimienta.
+                        4.Asa el salmón en la parrilla durante unos minutos por cada lado hasta que esté cocido.
+                        5.Rocía la salsa de mantequilla y limón sobre el salmón antes de servir.</p>
+                    <label for="agendar-comida">Agendar Comida</label>
+                    <input type="date">
+                </div>
+                <div class="recetas-varias">
+                    <h2>Ensalada César con Pollo a la Parrilla</h2>
+                    <img src="../assets/Ensalada-César-con-Pollo-a-la-Parrilla.jpg" alt="Ensalada-César-con-Pollo-a-la-Parrilla">
+                    <h2>Ingredientes</h2>
+                    <p>Pechuga de pollo
+                        Lechuga romana
+                        Crutones
+                        Queso parmesano rallado
+                        Salsa César</p>
+                    <h2>Instrucciones:</h2>
+                    <p> 1.Precalienta la parrilla a fuego medio-alto.
+                        2.En un tazón, mezcla mantequilla derretida, jugo de limón, ajo picado y perejil.
+                        3.Sazona los filetes de salmón con sal y pimienta.
+                        4.Asa el salmón en la parrilla durante unos minutos por cada lado hasta que esté cocido.
+                        5.Rocía la salsa de mantequilla y limón sobre el salmón antes de servir..</p>
+                    <label for="agendar-comida">Agendar Comida</label>
+                    <input type="date">
+                </div>
             </article>
     </main>
 
     <footer>
         <!--Estilo footer-->
         <div class="texto-footer">
-            <p>Todos los derechos reservados</p>
-            <p>Aviso de privacidad</p>
-            <p>Terminos y condiciones</p>
+          <p>Todos los derechos reservados</p>
+          <p>Aviso de privacidad</p>
+          <p>Terminos y condiciones</p>
         </div>
         <div class="redes-sociales">
-            <img src="../assets/logo-instagram.PNG" alt="logo-instagram"><img src="../assets/logo-facebook.png"
-                alt="logo-facebook"><img src="../assets/youtube-logo.jpg" alt="youtube-logo">
+          <img class="redes__sociales__logo" src="../assets/logo-instagram.PNG" alt="logo-instagram"><img class="redes__sociales__logo" src="../assets/logo-facebook.png"
+            alt="logo-facebook"><img class="redes__sociales__logo" src="../assets/youtube-logo.jpg" alt="youtube-logo">
         </div>
-
-    </footer>
+    
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

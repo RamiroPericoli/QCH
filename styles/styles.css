@@ -11,21 +11,21 @@ body {
     background-color: #DCE1DE;
 }
 
-ul {
+/* ul {
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-}
+} */
 
-ul li {
+/* ul li {
     display: inline-block;
     margin: 20px;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     font-weight: 700;
     color: black;
-}
+} */
 
 /* Estilos header */
 header {
@@ -36,9 +36,9 @@ header {
     height: 140px;
 }
 
-.logo-header {
+/* .logo-header {
     overflow: hidden;
-}
+} */
 
 .logo__marca {
     width: 300px;
@@ -47,6 +47,7 @@ header {
 }
 
 /* Estilos nvabar */
+
 .navbar-nav {
     font-weight: 300;
 }
@@ -63,9 +64,6 @@ header {
     font-weight: 500;
 }
 
-.navbar-nav .nav-link.active {
-    color: yellow;
-}
 
 /* Estilos titulos */
 .titulo {
@@ -75,23 +73,18 @@ header {
     font-family:
 }
 
-.titulo-recetas {
-    text-align: center;
-    color: rgb(30, 210, 165);
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Estilos footer */
 footer {
-    background-color:#9CC5A1;
+    background-color: #9CC5A1;
     border-top: solid;
 }
-.video__fuente__h2{
+
+.video__fuente__h2 {
     color: black;
     font-weight: 300;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .texto-footer {
     color: white;
     display: flex;
@@ -153,11 +146,41 @@ footer {
     align-items: center;
     border-style: solid;
     flex-wrap: nowrap;
-    color:#9CC5A1 ;
-   margin: 0px 200px 0px 200px;
+    color: #9CC5A1;
+    margin: 0px 200px 0px 200px;
+
 }
-.video__inicio{
+
+.video__inicio {
     padding-bottom: 20px;
+    width: 1000px;
+    height: 400px;
+
+}
+
+/* Estilos Pagina recetas */
+/* .imagen__carousel {
+    width: 600px;
+} */
+
+.titulo-recetas {
+    text-align: center;
+    color: #3a633f;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lista__recetas {
+    display: flex;
+    flex-direction: column;
+}
+
+.recetas__varias {
+    display: flex;
+}
+
+.recetas__varias__p {
+    white-space: pre-line;
 }
 
 /* Estilos Pagina contactos */
@@ -237,4 +260,46 @@ footer {
     background-image: url(../assets/nosotros.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Media querys paginia inicio */
+@media (max-width: 375px) {
+    .logo__marca {
+        width: 130px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+
+
+
+    .grid__recetas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 0px;
+        row-gap: 5px;
+        margin: 0 0px 0 0px;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-style: solid;
+        flex-wrap: nowrap;
+        color: #9CC5A1;
+        margin: 0px 00px 0px 000px;
+
+    }
+
+    .video__inicio {
+        padding-bottom: 20px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .redes-sociales {
+        justify-content: space-around;
+    }
 }
