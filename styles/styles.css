@@ -69,8 +69,7 @@ header {
 }
 
 /* Estilos footer */
-footer {
-    background-color: #9CC5A1;
+footer {    
     border-top: solid;
 }
 
@@ -88,7 +87,8 @@ footer {
 
 .redes-sociales {
     display: flex;
-    justify-content: end
+    justify-content: end;
+    padding-bottom: 10px;
 }
 
 .redes__sociales__logo {
@@ -296,7 +296,7 @@ font-size: 25px;
 }
 
 /* Media querys paginia inicio */
-@media (max-width: 375px) {
+@media (min-width: 350px) and (max-width: 480px) {
 
     header{
         background-color: white;
